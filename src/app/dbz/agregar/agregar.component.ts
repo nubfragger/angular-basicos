@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
@@ -13,9 +13,7 @@ export class AgregarComponent {
     poder: 0
   }
 
-  constructor( private dbzService: DbzService) {
-
-  }
+  constructor( private dbzService: DbzService) {}
 
   //@Output() onNuevoPJ: EventEmitter<Personaje> = new EventEmitter();
 
